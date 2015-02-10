@@ -1,0 +1,15 @@
+fibonacci = [1, 2]
+num1 = 1
+num2 = 2
+num3 = 3
+
+while (num3 < 4000001):
+    num1, num2, num3 = num2, num3, num1 + num2
+    fibonacci.append(num3)
+   
+
+total = 0
+for numbers in fibonacci:
+    if numbers % 2 == 0:
+        total = total + numbers
+print(total)
